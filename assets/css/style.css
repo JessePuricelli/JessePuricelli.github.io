@@ -169,27 +169,38 @@ section { margin: 56px 0; }
 .section-head h2 { margin: 0; }
 
 /* ---------- Landing page: hero ---------- */
-.hero { margin-top: 48px; display: grid; gap: 28px; grid-template-columns: 1fr; align-items: start; }
-@media (min-width: 820px) { .hero { grid-template-columns: 1.5fr 1fr; } }
-
-.lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 36em; }
-
-/* The label stuck on the front of a composition notebook */
-.cover-label {
-  border: 2px solid var(--ink);
-  background: var(--sheet);
-  padding: 18px 20px;
-  font-family: var(--font-tech);
-  font-size: .9rem;
-  transform: rotate(-1.2deg);
-  box-shadow: 4px 4px 0 var(--ink);
+.hero {
+  margin-top: 48px;
+  display: grid; gap: 40px; align-items: center;
+  grid-template-columns: 1fr;
 }
-.cover-label .title { font-weight: 600; font-size: 1.05rem; border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .1em; }
-.cover-label dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; }
-.cover-label dt { color: var(--ink-soft); text-transform: uppercase; font-size: .75rem; letter-spacing: .1em; padding-top: 2px; }
-.cover-label dd { margin: 0; border-bottom: 1px dotted var(--rule); }
+@media (min-width: 820px) { .hero { grid-template-columns: 320px 1fr; gap: 56px; margin-top: 64px; } }
 
-.hero .note { margin-top: 14px; transform: rotate(-2deg); display: inline-block; }
+.hero h1 { font-size: clamp(1.8rem, 4.2vw, 2.55rem); }
+.lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 36em; }
+.scroll-hint { margin-top: 28px; transform: rotate(-1.5deg); display: inline-block; }
+
+/* Polaroid-style photo "taped" onto the page */
+.portrait {
+  position: relative;
+  margin: 8px auto 0; width: min(68%, 240px);
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  padding: 14px 14px 18px;
+  box-shadow: 0 18px 30px -20px rgba(0,0,0,.55);
+  transform: rotate(-2.5deg);
+}
+.portrait img, .portrait .photo-slot { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; border: 1px solid var(--rule); }
+.portrait figcaption { text-align: center; margin-top: 10px; }
+@media (min-width: 820px) { .portrait { width: 100%; } }
+/* the two pieces of tape */
+.portrait::before, .portrait::after {
+  content: ""; position: absolute; top: -12px; width: 90px; height: 26px;
+  background: color-mix(in srgb, var(--highlight) 55%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.portrait::before { left: -18px;  transform: rotate(-28deg); }
+.portrait::after  { right: -18px; transform: rotate(24deg); }
 
 .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .btn {

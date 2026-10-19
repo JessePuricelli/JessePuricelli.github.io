@@ -33,35 +33,33 @@
 
     <!-- ============ HERO: first thing people see ============ -->
     <section class="hero">
-      <div>
-        <p class="label">Electrical Engineering Student</p>
-        <h1>Jesse Puricelli</h1>
+
+      <!-- Your photo, "taped" into the notebook.
+           When you have one: save it as assets/img/portrait.jpg (a portrait-shaped photo works best),
+           then replace the <div class="photo-slot">...</div> line with:
+           <img src="assets/img/portrait.jpg" alt="Jesse Puricelli">                                  -->
+      <figure class="portrait">
+        <div class="photo-slot">[ your photo here ]</div>
+        <figcaption class="note">↑ that's me</figcaption>
+      </figure>
+
+      <div class="intro">
+        <h1>I'm Jesse Puricelli,<br>an <mark>Electrical Engineering</mark> student.</h1>
         <p class="lede">
-          I build circuits, break them, measure why, and build them again.
-          This is my lab notebook: every project written up the way I'd log it at the bench,
-          with the problem, the build and the results.
+          I'm a [year] at [University], focused on [embedded systems / power / analog].
+          I like building real hardware: designing the circuit, laying out the board,
+          and measuring whether it actually works.
         </p>
         <div class="buttons">
-          <a class="btn primary" href="projects.html">Read the entries →</a>
+          <a class="btn primary" href="projects.html">See my projects →</a>
           <!-- Put your resume at assets/resume.pdf to make this button work -->
-          <a class="btn" href="assets/resume.pdf">Resume (PDF)</a>
+          <a class="btn" href="assets/resume.pdf">Resume</a>
+          <!-- Swap in your real LinkedIn link -->
+          <a class="btn" href="https://www.linkedin.com/" rel="noopener noreferrer">LinkedIn</a>
         </div>
+        <p class="note scroll-hint">scroll down for what I've been building ↓</p>
       </div>
 
-      <!-- The label on the notebook cover. Edit the lines below. -->
-      <div>
-        <div class="cover-label">
-          <div class="title">Lab Notebook No. 01</div>
-          <dl>
-            <dt>Owner</dt>   <dd>Jesse Puricelli</dd>
-            <dt>Field</dt>   <dd>Electrical Engineering</dd>
-            <dt>School</dt>  <dd>[Your university]</dd>
-            <dt>Class of</dt><dd>[20XX]</dd>
-            <dt>Focus</dt>   <dd>[e.g. embedded · power · analog]</dd>
-          </dl>
-        </div>
-        <p class="note">hardware first, code second ↓</p>
-      </div>
     </section>
 
     <!-- ============ FEATURED PROJECTS ============
@@ -131,6 +129,8 @@
         <table class="spec">
           <caption class="label">Specifications</caption>
           <tbody>
+            <tr><th scope="row">School</th>      <td>[University], class of [20XX]</td></tr>
+            <tr><th scope="row">Focus</th>       <td>[Embedded · power · analog]</td></tr>
             <tr><th scope="row">Design</th>      <td>[KiCad, LTspice, ...]</td></tr>
             <tr><th scope="row">Bench</th>       <td>[Oscilloscope, soldering, ...]</td></tr>
             <tr><th scope="row">Embedded</th>    <td>[Arduino, STM32, ...]</td></tr>
