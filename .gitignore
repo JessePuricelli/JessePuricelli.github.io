@@ -1,0 +1,30 @@
+# Keep secrets and private files out of the repo.
+# Anything matching these patterns will never be committed by accident.
+
+# Secrets, keys and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*secret*
+*credentials*
+*token*
+
+# Private working files (keep drafts here instead of in the site)
+private/
+drafts/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Tooling (in case it's ever added)
+node_modules/

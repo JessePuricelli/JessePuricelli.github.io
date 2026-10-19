@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="1" y="1" width="30" height="30" rx="4" fill="#fffefb" stroke="#1e2833" stroke-width="2"/>
+  <!-- resistor zigzag -->
+  <path d="M3 16h5l2-5 3 10 3-10 3 10 3-10 2 5h5" fill="none" stroke="#c8463d" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

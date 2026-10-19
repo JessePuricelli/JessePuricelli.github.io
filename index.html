@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: this page may only load files from this site. No outside scripts, trackers or fonts. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Jesse Puricelli · Lab Notebook</title>
+  <meta name="description" content="Electrical engineering student. Hardware projects, written up like lab notebook entries.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (same on every page) ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">J.PURICELLI<span>/</span>LAB</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ============ HERO: first thing people see ============ -->
+    <section class="hero">
+      <div>
+        <p class="label">Electrical Engineering Student</p>
+        <h1>Jesse Puricelli</h1>
+        <p class="lede">
+          I build circuits, break them, measure why, and build them again.
+          This is my lab notebook: every project written up the way I'd log it at the bench,
+          with the problem, the build and the results.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="projects.html">Read the entries →</a>
+          <!-- Put your resume at assets/resume.pdf to make this button work -->
+          <a class="btn" href="assets/resume.pdf">Resume (PDF)</a>
+        </div>
+      </div>
+
+      <!-- The label on the notebook cover. Edit the lines below. -->
+      <div>
+        <div class="cover-label">
+          <div class="title">Lab Notebook No. 01</div>
+          <dl>
+            <dt>Owner</dt>   <dd>Jesse Puricelli</dd>
+            <dt>Field</dt>   <dd>Electrical Engineering</dd>
+            <dt>School</dt>  <dd>[Your university]</dd>
+            <dt>Class of</dt><dd>[20XX]</dd>
+            <dt>Focus</dt>   <dd>[e.g. embedded · power · analog]</dd>
+          </dl>
+        </div>
+        <p class="note">hardware first, code second ↓</p>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============
+         To add one: copy a whole <a class="card"> ... </a> block, paste it, edit it.
+         To use a real photo: replace the <div class="photo-slot">...</div> with
+         <img src="assets/img/your-photo.jpg" alt="Describe the photo">           -->
+    <section aria-labelledby="featured">
+      <div class="section-head">
+        <h2 id="featured">Featured entries</h2>
+        <a class="mono" href="projects.html">All entries →</a>
+      </div>
+
+      <div class="cards">
+
+        <a class="card" href="projects/example-entry.html">
+          <div class="photo-slot">[ photo of project 001 ]</div>
+          <div class="body">
+            <div class="meta"><span class="label">Entry 001</span><span class="stamp done">Complete</span></div>
+            <h3>Project title goes here</h3>
+            <p>One or two sentences on what it is and what it does.</p>
+            <ul class="tags"><li>PCB</li><li>Analog</li></ul>
+            <span class="more">Read entry →</span>
+          </div>
+        </a>
+
+        <a class="card" href="projects/example-entry.html">
+          <div class="photo-slot">[ photo of project 002 ]</div>
+          <div class="body">
+            <div class="meta"><span class="label">Entry 002</span><span class="stamp">In progress</span></div>
+            <h3>Second project title</h3>
+            <p>One or two sentences on what it is and what it does.</p>
+            <ul class="tags"><li>Embedded</li><li>C</li></ul>
+            <span class="more">Read entry →</span>
+          </div>
+        </a>
+
+        <a class="card" href="projects/example-entry.html">
+          <div class="photo-slot">[ photo of project 003 ]</div>
+          <div class="body">
+            <div class="meta"><span class="label">Entry 003</span><span class="stamp done">Complete</span></div>
+            <h3>Third project title</h3>
+            <p>One or two sentences on what it is and what it does.</p>
+            <ul class="tags"><li>Power</li><li>Lab</li></ul>
+            <span class="more">Read entry →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="sheet" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div>
+          <h2 id="about-title">About</h2>
+          <p>
+            A few sentences about you: where you study, what got you into electrical engineering,
+            and what kind of problems you like working on.
+          </p>
+          <p>
+            A second paragraph on what you're looking for: internships, research, co-ops, or just
+            people to build things with.
+          </p>
+        </div>
+
+        <!-- Skills as a spec table. Add or remove <tr> rows freely. -->
+        <table class="spec">
+          <caption class="label">Specifications</caption>
+          <tbody>
+            <tr><th scope="row">Design</th>      <td>[KiCad, LTspice, ...]</td></tr>
+            <tr><th scope="row">Bench</th>       <td>[Oscilloscope, soldering, ...]</td></tr>
+            <tr><th scope="row">Embedded</th>    <td>[Arduino, STM32, ...]</td></tr>
+            <tr><th scope="row">Languages</th>   <td>[C, Python, MATLAB, ...]</td></tr>
+            <tr><th scope="row">Currently</th>   <td>[What you're working on now]</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============
+         Only list things you're comfortable being public. -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <ul class="contact-list">
+        <li><span class="label">LinkedIn</span> <a href="https://www.linkedin.com/" rel="noopener noreferrer">[linkedin.com/in/your-name]</a></li>
+        <li><span class="label">GitHub</span>   <a href="https://github.com/JessePuricelli" rel="noopener noreferrer">github.com/JessePuricelli</a></li>
+        <li><span class="label">Email</span>    <span class="mono">[your public email]</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Jesse Puricelli</span>
+      <span>Hand-built with HTML &amp; CSS · no trackers</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Projects · Jesse Puricelli</title>
+  <meta name="description" content="Index of hardware projects by Jesse Puricelli.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">J.PURICELLI<span>/</span>LAB</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="page-title">
+      <p class="label">Table of contents</p>
+      <h1>Index of entries</h1>
+      <p>Every project, newest first. Each entry covers the problem, the build, and what the measurements actually said.</p>
+    </section>
+
+    <!-- ============ THE INDEX ============
+         One <li> per project. To add a project: copy a whole <li> ... </li>,
+         paste it at the TOP of the list, and change the number, title, text, date and status.
+         Status options: <span class="stamp done">Complete</span>  or  <span class="stamp">In progress</span> -->
+    <section class="sheet">
+      <ol class="index" reversed>
+
+        <li>
+          <a href="projects/example-entry.html">
+            <span class="no">003</span>
+            <div class="what">
+              <h3>Third project title</h3>
+              <p>One line on what it is.</p>
+              <ul class="tags"><li>Power</li><li>Lab</li></ul>
+            </div>
+            <div class="when"><span>2026-09</span><span class="stamp done">Complete</span></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="projects/example-entry.html">
+            <span class="no">002</span>
+            <div class="what">
+              <h3>Second project title</h3>
+              <p>One line on what it is.</p>
+              <ul class="tags"><li>Embedded</li><li>C</li></ul>
+            </div>
+            <div class="when"><span>2026-05</span><span class="stamp">In progress</span></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="projects/example-entry.html">
+            <span class="no">001</span>
+            <div class="what">
+              <h3>Project title goes here</h3>
+              <p>One line on what it is.</p>
+              <ul class="tags"><li>PCB</li><li>Analog</li></ul>
+            </div>
+            <div class="when"><span>2026-01</span><span class="stamp done">Complete</span></div>
+          </a>
+        </li>
+
+      </ol>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Jesse Puricelli</span>
+      <span>Hand-built with HTML &amp; CSS · no trackers</span>
+    </div>
+  </footer>
+
+</body>
+</html>

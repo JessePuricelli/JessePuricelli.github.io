@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- HOW TO MAKE A NEW PROJECT PAGE
+       1. Copy this file and rename it, e.g. projects/audio-amp.html (lowercase, dashes, no spaces)
+       2. Change the title below and the text in each section
+       3. Put the project's photos in assets/img/ and point the <img> tags at them
+       4. Link to it from projects.html (and index.html if it's featured)
+       Note: this file lives one folder down, so paths to shared files start with ../ -->
+  <title>Project title · Jesse Puricelli</title>
+  <meta name="description" content="One-line summary of the project.">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">J.PURICELLI<span>/</span>LAB</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ============ ENTRY HEADER ============ -->
+    <header class="entry-head">
+      <div class="crumbs"><a href="../projects.html">← Index of entries</a></div>
+      <p class="label">Entry 001</p>
+      <h1>Project title goes here</h1>
+      <p class="lede">A one or two sentence summary: what you built and why it's interesting.</p>
+
+      <!-- The quick facts box. Add or remove <div> groups as needed. -->
+      <dl class="entry-meta">
+        <div><dt class="label">Date</dt>     <dd>Jan – Mar 2026</dd></div>
+        <div><dt class="label">Status</dt>   <dd><span class="stamp done">Complete</span></dd></div>
+        <div><dt class="label">Context</dt>  <dd>[Class / personal / club]</dd></div>
+        <div><dt class="label">Tools</dt>    <dd>[KiCad, scope, ...]</dd></div>
+      </dl>
+    </header>
+
+    <div class="entry-layout">
+
+      <!-- ============ MAIN WRITE-UP ============ -->
+      <article class="entry sheet">
+
+        <h2><span class="step">01</span> Objective</h2>
+        <p>What problem were you solving? What did it need to do, and what were the requirements or constraints
+          (voltage, current, size, budget, deadline)?</p>
+
+        <!-- Swap this placeholder for: <img src="../assets/img/your-photo.jpg" alt="What the photo shows"> -->
+        <figure class="figure">
+          <div class="photo-slot">[ Fig. 1: hero photo of the finished project ]</div>
+          <figcaption>Fig. 1: Caption describing the photo.</figcaption>
+        </figure>
+
+        <h2><span class="step">02</span> Design</h2>
+        <p>How it works. The approach you picked and why, key parts, and the calculations that mattered.
+          A schematic or block diagram goes great here.</p>
+
+        <figure class="figure">
+          <div class="photo-slot">[ Fig. 2: schematic or block diagram ]</div>
+          <figcaption>Fig. 2: Schematic.</figcaption>
+        </figure>
+
+        <table class="spec">
+          <caption class="label">Key components</caption>
+          <thead><tr><th>Part</th><th>Value / model</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>U1</td><td>[Part number]</td><td>[Reason you chose it]</td></tr>
+            <tr><td>R1</td><td>[10 kΩ]</td><td>[Sets the gain]</td></tr>
+            <tr><td>C1</td><td>[100 nF]</td><td>[Decoupling]</td></tr>
+          </tbody>
+        </table>
+
+        <h2><span class="step">03</span> Build log</h2>
+        <!-- One <li> per milestone. Keep it short and honest, mistakes included. -->
+        <ol class="log">
+          <li><time datetime="2026-01-10">2026-01-10</time> Breadboarded the first version. What happened.</li>
+          <li><time datetime="2026-01-24">2026-01-24</time> Found a problem (noise, heat, a wrong footprint). How you tracked it down.</li>
+          <li><time datetime="2026-02-15">2026-02-15</time> Ordered the PCB / built the final version.</li>
+        </ol>
+
+        <h2><span class="step">04</span> Results</h2>
+        <p>What did the measurements say? Compare what you <mark>expected</mark> with what you measured.</p>
+
+        <table class="spec">
+          <caption class="label">Measurements</caption>
+          <thead><tr><th>Parameter</th><th>Target</th><th>Measured</th></tr></thead>
+          <tbody>
+            <tr><td>[Output voltage]</td><td>[5.00 V]</td><td>[4.97 V]</td></tr>
+            <tr><td>[Ripple]</td><td>[&lt; 50 mV]</td><td>[32 mV]</td></tr>
+          </tbody>
+        </table>
+
+        <figure class="figure">
+          <div class="photo-slot">[ Fig. 3: scope capture or test setup ]</div>
+          <figcaption>Fig. 3: Scope capture.</figcaption>
+        </figure>
+
+        <h2><span class="step">05</span> Lessons &amp; next steps</h2>
+        <p>What you'd do differently, what you learned, and what version 2 would change.</p>
+
+        <!-- Optional links. Delete any you don't need. -->
+        <p class="mono">
+          Files: <a href="https://github.com/JessePuricelli" rel="noopener noreferrer">source on GitHub</a>
+        </p>
+      </article>
+
+      <!-- ============ MARGIN NOTES (handwritten-style asides) ============ -->
+      <aside class="margin-notes" aria-label="Margin notes">
+        <p class="note">first PCB I ever designed!</p>
+        <p class="note">lesson: check the footprint twice</p>
+      </aside>
+
+    </div>
+
+    <nav class="pager" aria-label="Entry navigation">
+      <a href="../projects.html">← All entries</a>
+      <a href="../projects.html">Next entry →</a>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Jesse Puricelli</span>
+      <span>Hand-built with HTML &amp; CSS · no trackers</span>
+    </div>
+  </footer>
+
+</body>
+</html>
